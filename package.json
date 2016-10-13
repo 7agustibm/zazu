@@ -12,13 +12,6 @@
       "oneClick": true,
       "installerHeaderIcon": "resources/windows/setup-icon.ico"
     },
-    "linux": {
-      "category": "Utility",
-      "synopsis": "A cross platform productivity application.",
-      "target": [
-        "deb"
-      ]
-    },
     "mac": {
       "target": [
         "dmg",
