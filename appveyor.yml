@@ -12,12 +12,13 @@ install:
 test_script:
   - node --version
   - npm --version
-  - npm run dev-release
+  - npm run release
+  - Tree dist
   - npm run cucumber
   - npm test
 
 artifacts:
-  - path: releases\*.exe
+  - path: dist\*.nsis
     name: ZazuWin
 
 deploy:
