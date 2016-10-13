@@ -13,7 +13,7 @@ test_script:
   - node --version
   - npm --version
   - npm run release
-  - Tree dist
+  - npm run disttree
   - npm run cucumber
   - npm test
 

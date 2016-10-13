@@ -12,7 +12,7 @@ before_install:
     fi
 script:
   - npm run release
-  - tree dist
+  - npm run disttree
   - npm run cucumber
   - npm test
 deploy:

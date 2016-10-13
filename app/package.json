@@ -4,6 +4,7 @@
   "description": "A cross platform productivity application.",
   "version": "0.1.3",
   "author": "Blaine Schmeisser",
+  "email": "blainesch@gmail.com",
   "main": "background.js",
   "homepage": "http://zazuapp.org",
   "license": "MIT",

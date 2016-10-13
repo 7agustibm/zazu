@@ -48,12 +48,14 @@
     "gh-pages": "^0.11.0",
     "gulp": "^3.9.0",
     "husky": "^0.11.4",
+    "nodetree": "0.0.3",
     "robotjs": "^0.4.4",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "spectron": "^3.3.0"
   },
   "scripts": {
+    "disttree": "nodetree dist",
     "prepush": "npm run lint && npm test",
     "postinstall": "cd app && npm install",
     "prerelease": "npm install",
