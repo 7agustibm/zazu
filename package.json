@@ -13,6 +13,7 @@
   },
   "email": "blainesch@gmail.com",
   "build": {
+    "publish": ["github"],
     "appId": "TinyTacoTeam.ZazuApp",
     "win": {
       "target": [
