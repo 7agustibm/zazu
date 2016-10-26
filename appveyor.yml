@@ -1,5 +1,5 @@
 environment:
-  nodejs_version: "6"
+  nodejs_version: "6.3.0"
 
 os: unstable
 
@@ -13,22 +13,7 @@ test_script:
   - node --version
   - npm --version
   - npm run release
-  - npm run disttree
   - npm run cucumber
   - npm test
-
-artifacts:
-  - path: dist\*.exe
-    name: ZazuWin
-
-deploy:
-  provider: GitHub
-  auth_token:
-    secure: D1pIgsEHQWzKjrC6oPRnPYwLjz8PEkKBuhc9Vs1uR+UZuCa0cFDFw2bfhWyPQEdY
-  artifact: ZazuWin
-  draft: false
-  prerelease: false
-  on:
-    appveyor_repo_tag: true
 
 build: off

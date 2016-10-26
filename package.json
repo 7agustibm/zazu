@@ -1,4 +1,16 @@
 {
+  "scripts": {
+    "prepush": "npm run lint && npm test",
+    "postinstall": "cd app && npm install",
+    "prerelease": "npm install",
+    "release": "build --x64 --publish onTagOrDraft",
+    "start": "cross-env NODE_ENV=development electron ./app",
+    "test": "cross-env NODE_ENV=test electron-mocha --recursive test/app",
+    "cucumber": "cucumberjs",
+    "lint": "eslint .",
+    "install-native": "node ./tasks/install_native_module",
+    "docs:publish": "gulp ghpages"
+  },
   "email": "blainesch@gmail.com",
   "build": {
     "appId": "TinyTacoTeam.ZazuApp",
@@ -47,18 +59,5 @@
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "spectron": "^3.3.0"
-  },
-  "scripts": {
-    "disttree": "nodetree dist",
-    "prepush": "npm run lint && npm test",
-    "postinstall": "cd app && npm install",
-    "prerelease": "npm install",
-    "release": "build --x64 --publish never",
-    "start": "cross-env NODE_ENV=development electron ./app",
-    "test": "cross-env NODE_ENV=test electron-mocha --recursive test/app",
-    "cucumber": "cucumberjs",
-    "lint": "eslint .",
-    "install-native": "node ./tasks/install_native_module",
-    "docs:publish": "gulp ghpages"
   }
 }
