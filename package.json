@@ -38,6 +38,9 @@
       "background": "resources/osx/dmg-background.png"
     }
   },
+  "directories": {
+    "buildResources": "resources"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "cheerio": "^0.20.0",
